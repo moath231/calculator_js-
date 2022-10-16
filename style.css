@@ -1,0 +1,43 @@
+
+.calc .white-space {
+  display: block;
+  margin: 0 auto;
+  background-color: black;
+  width: 300px;
+  height: 130px;
+}
+
+.calc .text-aria{
+  width: 285px;
+  height: 120px;
+  background-color: white;
+  margin: auto;
+  transform: translateY(5px);
+}
+.text-aria form input[type='text']{
+  width: calc(100% - 8px);
+  height: calc(50px);
+  transform: translateY(50%);
+  border: none;
+  font-size: 20px;
+}
+.text-aria form input:focus{
+  outline: none;
+}
+/*  */
+.calc .body {
+  background-color: gray;
+  width: 300px;
+  height: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+.calc .body form{
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(60px , 1fr));
+}
+.calc .body form input[type='button']{
+  height: 60px;
+  font-weight: 800;
+  font-size: 17px;
+}
